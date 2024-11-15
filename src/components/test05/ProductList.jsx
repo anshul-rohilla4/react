@@ -8,7 +8,7 @@ function ProductList() {
     return (
         <ol>
             {products.map(({ id, name, price }) => (
-                <li>
+                <li key={id}>
                     <div id={id} style={{ display: "flex", gap: "8px" }}>
                         <h3>Item:{name}</h3>
                         <h5>{price}</h5>
